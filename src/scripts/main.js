@@ -28,11 +28,12 @@ colorSelectors.forEach(selector =>
     this.className += ' shop__colors-wraper--is-active';
   }));
 
-document.getElementById('mail-form').addEventListener(
+const form = document.getElementById('mail-form');
+
+form.addEventListener(
   'submit', function(event) {
     event.preventDefault();
-  }, false
-);
+  });
 
 window.addEventListener('hashchange', () => {
   if (window.location.hash === '#menu') {
