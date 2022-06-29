@@ -1,7 +1,6 @@
 {
   "name": "pumm-pumm",
-  // "homepage": "https://github.com/ArtemPaskall/pumm-pumm.git",
-  "homepage": ".",
+  "homepage": "https://github.com/ArtemPaskall/pumm-pumm.git",
   "version": "1.0.0",
   "description": "Frontend boilerplate based on gulp",
   "main": "index.js",
