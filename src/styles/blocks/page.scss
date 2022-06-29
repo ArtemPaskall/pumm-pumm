@@ -1,0 +1,58 @@
+.page {
+  scroll-behavior: smooth;
+
+  &__body {
+    font-family: "Radion";
+    color: $text-color;
+  }
+
+  .page__body--with-menu {
+    overflow: hidden;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+
+    transform: translate(-100%);
+    transition: all 0.3s;
+
+    &:target {
+      transform: translate(0);
+    }
+  }
+
+  &__section  {
+
+    &--benefits {
+      margin-top: 67px;
+    }
+
+    &--modulos {
+      margin-top: 79px;
+    }
+
+    &--ticker  {
+      margin: 0 auto;
+      margin-top: 71px;
+      max-width: 1440px;
+    }
+
+    &--shop {
+      margin-top: 76px;
+    }
+
+    &--partners {
+      margin-top: 76px;
+    }
+  }
+
+  &__footer {
+    margin-top: 145px;
+    margin-bottom: 40px;
+  }
+}

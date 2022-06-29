@@ -1,0 +1,24 @@
+.button {
+  width: fit-content;
+  padding: 10px 20px;
+
+  background-color: #FF7144;
+  color: #FFFFFF;
+
+  font-size: 15px;
+  font-family: "Radion";
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border: 2px solid  #FF7144;
+  border-radius: 27px;
+
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #FFFFFF;
+    color: #FF7144;
+    border: 2px solid  #FF7144;
+  }
+}

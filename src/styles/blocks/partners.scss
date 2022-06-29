@@ -1,0 +1,33 @@
+.partners {
+
+  &__title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+
+  }
+
+  &__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 98px;
+    margin-top: 42px;
+
+    @include iPad {
+      padding: 0 20px;
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+
+    & img {
+      transition: 0.6s;
+    }
+
+    & img:hover {
+      transform: scale(120%);
+    }
+  }
+}

@@ -1,0 +1,168 @@
+.footer {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__mail-and-links-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  &__mail {
+    margin-right: 120px;
+
+    &-title {
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: -0.01em;
+    }
+
+    &-input {
+      width: 228px;
+      height: 40px;
+      border: 1px solid #D8D8D8;
+      border-radius: 40px;
+      margin-right: 5px;
+
+      font-family: "Roboto";
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: -0.01em;
+      color: #615e5e;
+
+      padding: 16px;
+
+      &:focus-visible {
+        outline: none;
+      }
+
+      &:focus {
+        border: 1px solid #747474;
+      }
+
+      &::placeholder {
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+        opacity: 50%;
+      }
+    }
+
+    &-form {
+      margin-top: 18px;
+    }
+
+    &-terms {
+      margin-top: 14px;
+
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: -0.01em;
+
+      opacity: 60%;
+    }
+  }
+
+  &__links {
+
+    &-title {
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: -0.01em;
+    }
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+
+      margin-top: 25px;
+      gap: 5px;
+    }
+
+    &-link {
+      text-decoration: none;
+      opacity: 80%;
+      color: $text-color;
+      transition: transform 0.3s;
+      padding: 5px;
+
+      &:hover {
+        transform: scale(1.1);
+        transform-origin: center;
+        opacity: 100%;
+      }
+    }
+
+  }
+
+  &__media {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    @media (max-width: 870px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+
+
+    &-img {
+      width: 19px;
+      height: 19px;
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(2.1);
+      }
+    }
+  }
+
+  &__logo {
+    margin-top: 73px;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 15% 0;
+  }
+
+  &__logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    color: #CCC8C2;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+
+    &-links {
+      margin-right: 60px;
+    }
+
+    &-link {
+      text-decoration: none;
+      display: inline-block;
+      color: #CCC8C2;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+        color: $text-color;
+      }
+
+      &:first-child {
+        padding-right: 49px;
+      }
+    }
+  }
+}
+

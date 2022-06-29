@@ -1,13 +1,412 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Pumm Pumm</title>
+    <link rel="shortcut icon" type="image/png" href="./images/Logo-favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+
+  <body class="page__body">
+
+    <nav class="page__menu menu" id="menu">
+      <div class="container">
+        <div class="menu__cross">
+          <a href="#" class="menu__cross"><img src="./images/cross_icon.png" alt="Cross" class="menu__cross-img"></a>
+        </div>
+        <div class="menu__content">
+          <div class="menu__links">
+            <a href="#shop" class="menu-link">Shop</a>
+            <a href="#benefits" class="menu-link">Our process</a>
+            <a href="#footer" class="menu-link">About</a>
+            <a href="#footer" class="menu-link">Support</a>
+          </div>
+          <div class="menu__logo">
+            <img src="./images/logo-footer.png" alt="Logo Pumm Pumm" class="menu__logo-img">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__content">
+          <nav class="header__navigation">
+            <a href="#shop" class="header__nav-link">Shop</a>
+            <a href="#benefits" class="header__nav-link">Our process</a>
+            <a href="#footer" class="header__nav-link">About</a>
+            <a href="#footer" class="header__nav-link">Support</a>
+          </nav>
+          <a href="#menu" class="menu-icon">
+          </a>
+          <a href="#">
+            <img
+            class="header__logo"
+            src="./images/logo-pumm.svg"
+            alt="Logo-Pumm"
+          >
+          </a>
+          <div class="header__right-bar">
+            <a href="#modulos" class="header__right-bar-link">
+              <img src="./images/smiley.svg" alt="smiley" class="header__right-bar-img header__right-bar-img--smile">
+            </a>
+            <a href="#shop" class="header__right-bar-link">
+              <img src="./images/handbag.svg" alt="handbag" class="header__right-bar-img">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__images">
+        <div class="header__image-wrap">
+          <img
+          class="header__image"
+          src="./images/header-photo-left.png"
+          alt="girl on sofa"
+        >
+        </div>
+        <div class="header__image-wrap">
+          <img
+          class="header__image"
+          src="./images/header-photo-right.png"
+          alt="red sofa"
+        >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page__section--benefits benefits" id="benefits">
+        <div class="container">
+          <div class="benefits__content">
+            <div class="benefits__title-wrap">
+              <h3 class="benefits__title">
+                A modern generation of sofa.<br />
+                Lorem ipsum dolor sit amet.
+              </h3>
+              <button class="button benefits__button">saber más</button>
+            </div>
+            <div class="benefits__list">
+              <div class="list-item">
+                <img src="./images/benefits-img-1.png" alt="Delivery 24/7" class="list-item__img--1">
+                <img src="./images/benefit-star-1.svg" alt="Star" class="list-item__star--1">
+                <div class="list-item__description">
+                  <p class="list-item__description--title">Entrega en 24 h  en tu casa</p>
+                  <p class="list-item__description--text">El sofá en caja que cabe <br /> en tu ascensor.</p>
+                </div>
+              </div>
+              <div class="list-item">
+                <img src="./images/benefits-img-2.svg" alt="Probation period 100 days" class="list-item__img--2">
+                <img src="./images/benefit-star-2.svg" alt="Star" class="list-item__star--2">
+                <div class="list-item__description">
+                  <p class="list-item__description--title">Pruébalo 100 días</p>
+                  <p class="list-item__description--text">Vamos a tu casa a recogerlo.</p>
+                </div>
+              </div>
+              <div class="list-item">
+                <img src="./images/benefits-img-3.svg" alt="No tools needed!" class="list-item__img--3">
+                <img src="./images/benefit-star-3.svg" alt="Star" class="list-item__star--3">
+                <div class="list-item__description">
+                  <p class="list-item__description--title">Fácil de montar</p>
+                  <p class="list-item__description--text">No tools needed !</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section--modulos modulos" id="modulos">
+        <div class="container">
+          <h2 class="modulos__title">3 módulos. Infinitas posibilidades.</h2>
+          <div class="modulos__img-wrap">
+            <img src="./images/modulos-img.png" alt="Gray sofa" class="modulos__img">
+            <img src="./images/modulos-white-star.svg" alt="White star" class="modulos__img-star">
+            <div class="rate-box">
+              <div class="rate-box__rate-value">
+                <p class="rate-box__rate-value--excellent">Excellent</p>
+                <div class="rate-box__star-box-container">
+                  <div class="rate-box__star-box">
+                    <img src="./images/star-box/white-star.svg" alt="White star">
+                  </div>
+                  <div class="rate-box__star-box">
+                    <img src="./images/star-box/white-star.svg" alt="White star">
+                  </div>
+                  <div class="rate-box__star-box">
+                    <img src="./images/star-box/white-star.svg" alt="White star">
+                  </div>
+                  <div class="rate-box__star-box">
+                    <img src="./images/star-box/white-star.svg" alt="White star">
+                  </div>
+                  <div class="rate-box__star-box">
+                    <img src="./images/star-box/white-star.svg" alt="White star">
+                  </div>
+                </div>
+                <p>
+                  <span class="rate-box__rate-value--grade-bold">4.9</span>
+                  out of 5
+                </p>
+              </div>
+
+              <div class="rate-box__reviews">
+                <p class="rate-box__reviews--number">
+                  <span class="rate-box__reviews--bold-number">
+                    123
+                  </span>
+                  reviews on
+                </p>
+                <img
+                  src="./images/star-box/green-star.svg" ]
+                  alt="Green star"
+                  class="rate-box__reviews--green-star" >
+                <p class="rate-box__reviews--trustpilot">Trustpilot</p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="page__section--shop shop" id="shop">
+        <div class=" container container--shop">
+          <h2 class="shop__title">
+            Construye tu sofá perfecto. Modifícalo<br />
+            como quieras. Empieza con...
+          </h2>
+          <div class="shop__color-select">
+            <div class="shop__color-selector">
+              <div class="shop__color-title">Elige tu color</div>
+              <div class="shop__colors-wraper shop__colors-wraper--is-active">
+                <div class="shop__colors shop__colors--1"></div>
+              </div>
+              <div class="shop__colors-wraper">
+                <div class="shop__colors shop__colors--2"></div>
+              </div>
+              <div class="shop__colors-wraper">
+                <div class="shop__colors shop__colors--3"></div>
+              </div>
+              <div class="shop__colors-wraper">
+                <div class="shop__colors shop__colors--4"></div>
+              </div>
+            </div>
+            <div>
+              <button class="button">Compra ahora</button>
+            </div>
+          </div>
+
+          <div class="shop__gallery">
+            <div class="shop__good-item shop__good-item--1">
+              <svg class="shop__good-svg shop__good-svg--1" id="first" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="108" viewBox="0 0 299 108" fill="none">
+                <rect x="0.49707" y="0.607422" width="297.711" height="107.359" fill="url(#pattern0)"/>
+                <g style="mix-blend-mode:multiply">
+                <path class="shop__sofa-svg" d="M118.079 25.1908V15.5441H107.032C102.925 15.5441 100.238 18.8634 99.4084 20.523C98.4126 16.7888 93.9108 15.6478 91.7844 15.5441C71.0388 15.2848 28.3339 14.9217 23.4795 15.5441C18.625 16.1665 18.0338 25.865 18.3449 30.6365C17.5981 28.7694 16.2704 29.8585 15.6999 30.6365C13.2104 32.6281 11.6545 37.0676 11.1877 39.0385C11.2914 53.9234 11.4366 84.3469 11.1877 86.9608C10.8765 90.2283 11.9656 91.1618 13.366 91.3174C14.7663 91.473 14.4551 87.5832 15.0775 89.1391C15.5754 90.3839 19.7452 91.9398 21.7679 92.5621C43.3952 92.3547 88.2369 92.0642 94.585 92.5621C102.52 93.1845 102.831 86.494 103.921 89.1391C104.792 91.2552 108.225 92.3028 109.833 92.5621H183.273C191.519 92.5621 189.652 86.3385 191.208 89.1391C192.452 91.3796 196.602 92.3547 198.521 92.5621C218.799 92.5103 260.913 92.4377 267.137 92.5621C274.916 92.7177 275.85 90.8506 277.717 91.0062C279.211 91.1307 279.999 90.0208 280.206 89.4503C280.206 74.0986 280.829 35.1487 280.051 35.9267C277.717 38.2606 276.939 44.4842 275.694 48.2185C273.983 52.1083 271.493 56.413 270.871 55.6869C266.514 55.6869 257.334 51.0191 255.312 46.5069C253.498 42.4615 262.521 21.7678 261.691 22.7014C258.579 16.8511 253.756 15.2848 251.733 15.5441H186.696C183.957 15.5441 180.887 18.0336 179.694 19.2783C177.204 14.2994 163.042 14.2916 163.668 15.5441C165.535 19.2784 165.068 22.5457 165.068 24.2572C165.068 25.9688 164.29 36.8602 165.068 43.3951C165.691 48.623 162.631 50.656 161.49 51.0191C148.264 50.5523 122.903 50.5523 120.725 50.5523C118.546 50.5523 118.079 45.2622 119.169 43.3951C120.258 41.528 118.079 31.4145 118.079 25.1908Z" style="fill: rgba(28, 45, 15, 0.7)"/>
+                </g>
+                <g style="mix-blend-mode:multiply">
+                <path d="M162.424 9.63166C162.797 10.503 163.201 13.7289 163.357 15.233C165.224 16.7889 165.069 21.3011 165.069 24.2573V33.2817C164.861 34.4227 164.571 38.0739 165.069 43.5507C165.567 49.0276 162.89 50.708 161.49 50.8636C149.665 50.708 125.331 50.4902 122.592 50.8636C119.169 51.3303 117.769 48.0629 118.547 45.2623C119.169 43.0217 119.429 41.4243 119.48 40.9057L117.769 23.3238C117.82 21.9234 117.893 17.878 117.769 12.8991C117.644 7.92015 120.932 6.67542 122.592 6.67542C133.068 6.88287 154.893 7.3289 158.378 7.45338C162.735 7.60897 161.957 8.54252 162.424 9.63166Z" fill="#11170A" />
+                </g>
+                <g style="mix-blend-mode:multiply">
+                <path d="M280.985 30.7921C280.985 32.0368 280.466 34.7338 280.207 35.9266C279.741 36.3934 277.094 39.9721 277.25 42.6171C277.406 45.2622 273.205 53.5086 271.649 55.2201C270.093 56.9316 262.936 53.1974 260.913 51.7971C258.891 50.3967 254.69 47.9073 255.001 44.173C255.25 41.1857 259.046 29.9623 260.913 24.724C263.403 19.2472 265.166 18.8115 265.737 19.2783C269.471 20.5749 277.375 23.4793 279.118 24.724C281.296 26.2799 280.985 29.2362 280.985 30.7921Z" fill="#11170A"/>
+                </g>
+                <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_1_313" transform="translate(-0.00130499) scale(0.00074048 0.00205339)"/>
+                </pattern>
+                <image id="image0_1_313" xlink:href="./images/shop-gallery/sofa1-background.png"></image>
+                </defs>
+              </svg>
+              <div class="shop__sofa-description">
+                <p class="shop__sofa-description--block">3 Seater sofa</p>
+                <p class="shop__sofa-description--block"><span class="shop__sofa-price">Desde 2500€</span></p>
+              </div>
+            </div>
+            <div class="shop__good-item shop__good-item--2">
+              <svg class="shop__good-svg shop__good-svg--2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="98" viewBox="0 0 111 98" fill="none">
+                <mask id="mask0_1_325" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="111" height="98">
+                <path d="M103.051 56.7254C99.8263 55.758 82.1436 53.4738 73.7053 52.4526C74.6728 52.4526 75.2909 49.604 75.479 48.1797V20.3657C75.479 14.4965 69.7818 12.3843 66.9332 12.0618C66.8257 11.0137 66.4334 8.09525 65.7239 4.80594C65.0145 1.51663 62.096 0.47932 60.7255 0.371826C51.8303 0.748054 33.2823 1.58113 30.251 1.90361C27.2196 2.22609 26.623 3.97287 26.7037 4.80594L27.913 12.5455C25.7631 12.5455 19.6413 12.7067 12.3532 13.3517C5.06516 13.9967 3.72687 20.4463 3.96873 23.5905V37.8603C1.0664 38.4407 0.502052 44.1218 0.582672 47.1316V73.172C0.582672 79.7022 1.14702 81.234 1.8726 83.4914C1.71136 85.8294 3.56563 85.7488 4.85555 85.8294C4.27509 87.6998 5.84987 88.6511 6.70982 88.893C17.5129 91.4997 39.7803 96.8421 42.4246 97.3581C45.069 97.8741 49.8148 97.5731 51.8572 97.3581L85.0728 93.1658C91.7105 92.3328 105.566 90.5054 107.888 89.8604C110.791 89.0542 109.581 87.1999 108.695 86.0712C110.049 85.2328 110.495 82.9808 110.549 81.9596V64.3844C110.549 58.7409 107.082 57.9347 103.051 56.7254Z" fill="#C4C4C4"/>
+                </mask>
+                <g mask="url(#mask0_1_325)">
+                <rect width="118.834" height="120.286" transform="matrix(-1 0 0 1 114.257 -9.86694)" fill="url(#pattern01)"/>
+                <g style="mix-blend-mode:multiply">
+                <path class="shop__sofa-svg" d="M103.051 56.7254C99.8263 55.758 82.1436 53.4738 73.7053 52.4526C74.6728 52.4526 75.2909 49.604 75.479 48.1797V20.3657C75.479 14.4965 69.7818 12.3843 66.9332 12.0618C66.8257 11.0137 66.4334 8.09525 65.7239 4.80594C65.0145 1.51663 62.096 0.47932 60.7255 0.371826C51.8303 0.748054 33.2823 1.58113 30.251 1.90361C27.2196 2.22609 26.623 3.97287 26.7037 4.80594L27.913 12.5455C25.7631 12.5455 19.6413 12.7067 12.3532 13.3517C5.06516 13.9967 3.72687 20.4463 3.96873 23.5905V37.8603C1.0664 38.4407 0.502052 44.1218 0.582672 47.1316V73.172C0.582672 79.7022 1.14702 81.234 1.8726 83.4914C1.71136 85.8294 3.56563 85.7488 4.85555 85.8294C4.27509 87.6998 5.84987 88.6511 6.70982 88.893C17.5129 91.4997 39.7803 96.8421 42.4246 97.3581C45.069 97.8741 49.8148 97.5731 51.8572 97.3581L85.0728 93.1658C91.7105 92.3328 105.566 90.5054 107.888 89.8604C110.791 89.0542 109.581 87.1999 108.695 86.0712C110.049 85.2328 110.495 82.9808 110.549 81.9596V64.3844C110.549 58.7409 107.082 57.9347 103.051 56.7254Z" style="fill: rgba(28, 45, 15, 0.7)"/>
+                </g>
+                </g>
+                <defs>
+                <pattern id="pattern01" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_1_325" transform="scale(0.00135685 0.00134048)"/>
+                </pattern>
+                <image id="image0_1_325" xlink:href="./images/shop-gallery/sofa2-background.png"></image>
+                </defs>
+              </svg>
+              <div class="shop__sofa-description">
+                <p class="shop__sofa-description--block">Single chair</p>
+                <p class="shop__sofa-description--block"><span class="shop__sofa-price">Desde 1500€</span></p>
+              </div>
+            </div>
+            <div class="shop__good-item shop__good-item--3">
+              <svg class="shop__good-svg shop__good-svg--3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100" viewBox="0 0 211 100" fill="none">
+                  <mask id="mask0_1_3009" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="211" height="100">
+                  <path d="M104.168 3.28464C101.249 3.469 98.8003 3.86802 96.8109 4.34641C92.7675 5.31876 88.2067 5.76785 84.0802 5.25202C82.092 5.00351 77.177 5.14848 74.968 5.25202C61.6795 6.0804 33.8184 7.79928 28.6825 8.04779C22.2626 8.35843 15.4285 9.08326 12.3221 9.91164C6.02643 11.4856 4.59058 16.9183 4.65961 19.438V23.9451C4.65961 25.3078 3.88338 26.5422 2.69222 27.204C0.786957 28.0324 0.103547 30.3104 0 31.3459V56.3007V75.2498V87.6754C0 88.918 1.03547 89.5738 1.5532 89.7463C12.5637 92.4731 35.1438 98.0301 37.3805 98.4443C40.1762 98.962 41.5223 99.4798 42.5578 99.0656C43.3862 98.7342 43.5933 97.9611 43.5933 97.6159C43.5933 96.9893 44.1875 96.5325 44.7955 96.6841C47.8537 97.4469 53.0183 98.5478 56.1225 98.5478C59.6845 98.5478 66.6497 97.7885 69.6871 97.4088L107.378 92.335C113.177 91.4721 125.499 89.6428 128.398 89.2286C132.473 88.6465 136.473 87.2289 140.589 87.2091C148.489 87.171 160.108 85.6003 166.296 84.569C176.651 83.1193 198.727 80.0129 204.195 79.1846C209.662 78.3562 210.96 73.7311 210.925 71.5221V54.5404C210.925 49.1559 210.822 48.0169 209.89 46.2566C208.958 44.4963 206.887 43.0467 200.571 41.4935C190.616 39.3798 180.167 37.9845 173.482 37.2188C170.986 36.9329 169.331 32.9229 169.196 30.4139C169.334 25.3056 169.527 13.7015 169.196 8.15134C168.782 1.21369 159.669 0.695966 156.667 0.385325C154.264 0.136812 145.311 0.764997 141.135 1.11015C132.091 1.62789 112.038 2.78761 104.168 3.28464Z" fill="#C4C4C4"/>
+                  </mask>
+                  <g mask="url(#mask0_1_3009)">
+                    <rect x="-14.4961" y="-27.6757" width="241.264" height="141.445" rx="30" fill="url(#pattern05)"/>
+                  <g style="mix-blend-mode:multiply">
+                  <path class="shop__sofa-svg" d="M104.168 3.28464C101.249 3.469 98.8003 3.86802 96.8109 4.34641C92.7675 5.31876 88.2067 5.76785 84.0802 5.25202C82.092 5.00351 77.177 5.14848 74.968 5.25202C61.6795 6.0804 33.8184 7.79928 28.6825 8.04779C22.2626 8.35843 15.4285 9.08326 12.3221 9.91164C6.02643 11.4856 4.59058 16.9183 4.65961 19.438V23.9451C4.65961 25.3078 3.88338 26.5422 2.69222 27.204C0.786957 28.0324 0.103547 30.3104 0 31.3459V56.3007V75.2498V87.6754C0 88.918 1.03547 89.5738 1.5532 89.7463C12.5637 92.4731 35.1438 98.0301 37.3805 98.4443C40.1762 98.962 41.5223 99.4798 42.5578 99.0656C43.3862 98.7342 43.5933 97.9611 43.5933 97.6159C43.5933 96.9893 44.1875 96.5325 44.7955 96.6841C47.8537 97.4469 53.0183 98.5478 56.1225 98.5478C59.6845 98.5478 66.6497 97.7885 69.6871 97.4088L107.378 92.335C113.177 91.4721 125.499 89.6428 128.398 89.2286C132.473 88.6465 136.473 87.2289 140.589 87.2091C148.489 87.171 160.108 85.6003 166.296 84.569C176.651 83.1193 198.727 80.0129 204.195 79.1846C209.662 78.3562 210.96 73.7311 210.925 71.5221V54.5404C210.925 49.1559 210.822 48.0169 209.89 46.2566C208.958 44.4963 206.887 43.0467 200.571 41.4935C190.616 39.3798 180.167 37.9845 173.482 37.2188C170.986 36.9329 169.331 32.9229 169.196 30.4139C169.334 25.3056 169.527 13.7015 169.196 8.15134C168.782 1.21369 159.669 0.695966 156.667 0.385325C154.264 0.136812 145.311 0.764997 141.135 1.11015C132.091 1.62789 112.038 2.78761 104.168 3.28464Z" style="fill: rgba(28, 45, 15, 0.7)"/>
+                  </g>
+                  </g>
+                  <defs>
+                  <pattern id="pattern05" patternContentUnits="objectBoundingBox" width="1" height="1" >
+                  <use xlink:href="#image0_1_3009" transform="scale(0.000858369 0.00146413)"/>
+                  </pattern>
+                    <image id="image0_1_3009" xlink:href="./images/shop-gallery/sofa3-background.png">
+                  </defs>
+              </svg>
+              <div class="shop__sofa-description">
+                <p class="shop__sofa-description--block">2 Seater sofa</p>
+                <p class="shop__sofa-description--block"><span class="shop__sofa-price">Desde 2500€</span></p>
+              </div>
+            </div>
+            <div class="shop__good-item shop__good-item--4">
+              <svg class="shop__good-svg shop__good-svg--4" id="first" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"  height="108" viewBox="0 0 299 108" fill="none">
+                <rect x="0.49707" y="0.607422" width="297.711" height="107.359" fill="url(#pattern0)"/>
+                <g style="mix-blend-mode:multiply">
+                <path class="shop__sofa-svg" d="M118.079 25.1908V15.5441H107.032C102.925 15.5441 100.238 18.8634 99.4084 20.523C98.4126 16.7888 93.9108 15.6478 91.7844 15.5441C71.0388 15.2848 28.3339 14.9217 23.4795 15.5441C18.625 16.1665 18.0338 25.865 18.3449 30.6365C17.5981 28.7694 16.2704 29.8585 15.6999 30.6365C13.2104 32.6281 11.6545 37.0676 11.1877 39.0385C11.2914 53.9234 11.4366 84.3469 11.1877 86.9608C10.8765 90.2283 11.9656 91.1618 13.366 91.3174C14.7663 91.473 14.4551 87.5832 15.0775 89.1391C15.5754 90.3839 19.7452 91.9398 21.7679 92.5621C43.3952 92.3547 88.2369 92.0642 94.585 92.5621C102.52 93.1845 102.831 86.494 103.921 89.1391C104.792 91.2552 108.225 92.3028 109.833 92.5621H183.273C191.519 92.5621 189.652 86.3385 191.208 89.1391C192.452 91.3796 196.602 92.3547 198.521 92.5621C218.799 92.5103 260.913 92.4377 267.137 92.5621C274.916 92.7177 275.85 90.8506 277.717 91.0062C279.211 91.1307 279.999 90.0208 280.206 89.4503C280.206 74.0986 280.829 35.1487 280.051 35.9267C277.717 38.2606 276.939 44.4842 275.694 48.2185C273.983 52.1083 271.493 56.413 270.871 55.6869C266.514 55.6869 257.334 51.0191 255.312 46.5069C253.498 42.4615 262.521 21.7678 261.691 22.7014C258.579 16.8511 253.756 15.2848 251.733 15.5441H186.696C183.957 15.5441 180.887 18.0336 179.694 19.2783C177.204 14.2994 163.042 14.2916 163.668 15.5441C165.535 19.2784 165.068 22.5457 165.068 24.2572C165.068 25.9688 164.29 36.8602 165.068 43.3951C165.691 48.623 162.631 50.656 161.49 51.0191C148.264 50.5523 122.903 50.5523 120.725 50.5523C118.546 50.5523 118.079 45.2622 119.169 43.3951C120.258 41.528 118.079 31.4145 118.079 25.1908Z" style="fill: rgba(28, 45, 15, 0.7)" />
+                </g>
+                <g style="mix-blend-mode:multiply">
+                <path d="M162.424 9.63166C162.797 10.503 163.201 13.7289 163.357 15.233C165.224 16.7889 165.069 21.3011 165.069 24.2573V33.2817C164.861 34.4227 164.571 38.0739 165.069 43.5507C165.567 49.0276 162.89 50.708 161.49 50.8636C149.665 50.708 125.331 50.4902 122.592 50.8636C119.169 51.3303 117.769 48.0629 118.547 45.2623C119.169 43.0217 119.429 41.4243 119.48 40.9057L117.769 23.3238C117.82 21.9234 117.893 17.878 117.769 12.8991C117.644 7.92015 120.932 6.67542 122.592 6.67542C133.068 6.88287 154.893 7.3289 158.378 7.45338C162.735 7.60897 161.957 8.54252 162.424 9.63166Z" fill="#11170A"/>
+                </g>
+                <g style="mix-blend-mode:multiply">
+                <path d="M280.985 30.7921C280.985 32.0368 280.466 34.7338 280.207 35.9266C279.741 36.3934 277.094 39.9721 277.25 42.6171C277.406 45.2622 273.205 53.5086 271.649 55.2201C270.093 56.9316 262.936 53.1974 260.913 51.7971C258.891 50.3967 254.69 47.9073 255.001 44.173C255.25 41.1857 259.046 29.9623 260.913 24.724C263.403 19.2472 265.166 18.8115 265.737 19.2783C269.471 20.5749 277.375 23.4793 279.118 24.724C281.296 26.2799 280.985 29.2362 280.985 30.7921Z" fill="#11170A"/>
+                </g>
+                <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_1_313" transform="translate(-0.00130499) scale(0.00074048 0.00205339)"/>
+                </pattern>
+                <image id="image0_1_313" xlink:href="./images/shop-gallery/sofa1-background.png"></image>
+                </defs>
+              </svg>
+              <div class="shop__sofa-description">
+                <p class="shop__sofa-description--block">3 Seater sofa</p>
+                <p class="shop__sofa-description--block"><span class="shop__sofa-price">Desde 2500€</span></p>
+              </div>
+            </div>
+            <div class="shop__good-item shop__good-item--5">
+              <svg class="shop__good-svg shop__good-svg--5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="202" viewBox="0 0 211 100" fill="none">
+                <mask id="mask0_1_30097" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="211" height="100">
+                <path d="M104.168 3.28464C101.249 3.469 98.8003 3.86802 96.8109 4.34641C92.7675 5.31876 88.2067 5.76785 84.0802 5.25202C82.092 5.00351 77.177 5.14848 74.968 5.25202C61.6795 6.0804 33.8184 7.79928 28.6825 8.04779C22.2626 8.35843 15.4285 9.08326 12.3221 9.91164C6.02643 11.4856 4.59058 16.9183 4.65961 19.438V23.9451C4.65961 25.3078 3.88338 26.5422 2.69222 27.204C0.786957 28.0324 0.103547 30.3104 0 31.3459V56.3007V75.2498V87.6754C0 88.918 1.03547 89.5738 1.5532 89.7463C12.5637 92.4731 35.1438 98.0301 37.3805 98.4443C40.1762 98.962 41.5223 99.4798 42.5578 99.0656C43.3862 98.7342 43.5933 97.9611 43.5933 97.6159C43.5933 96.9893 44.1875 96.5325 44.7955 96.6841C47.8537 97.4469 53.0183 98.5478 56.1225 98.5478C59.6845 98.5478 66.6497 97.7885 69.6871 97.4088L107.378 92.335C113.177 91.4721 125.499 89.6428 128.398 89.2286C132.473 88.6465 136.473 87.2289 140.589 87.2091C148.489 87.171 160.108 85.6003 166.296 84.569C176.651 83.1193 198.727 80.0129 204.195 79.1846C209.662 78.3562 210.96 73.7311 210.925 71.5221V54.5404C210.925 49.1559 210.822 48.0169 209.89 46.2566C208.958 44.4963 206.887 43.0467 200.571 41.4935C190.616 39.3798 180.167 37.9845 173.482 37.2188C170.986 36.9329 169.331 32.9229 169.196 30.4139C169.334 25.3056 169.527 13.7015 169.196 8.15134C168.782 1.21369 159.669 0.695966 156.667 0.385325C154.264 0.136812 145.311 0.764997 141.135 1.11015C132.091 1.62789 112.038 2.78761 104.168 3.28464Z" fill="#C4C4C4"/>
+                </mask>
+                <g mask="url(#mask0_1_30097)">
+                  <rect x="-14.4961" y="-27.6757" width="241.264" height="141.445" rx="30" fill="url(#pattern057)"/>
+                <g style="mix-blend-mode:multiply">
+                <path class="shop__sofa-svg" d="M104.168 3.28464C101.249 3.469 98.8003 3.86802 96.8109 4.34641C92.7675 5.31876 88.2067 5.76785 84.0802 5.25202C82.092 5.00351 77.177 5.14848 74.968 5.25202C61.6795 6.0804 33.8184 7.79928 28.6825 8.04779C22.2626 8.35843 15.4285 9.08326 12.3221 9.91164C6.02643 11.4856 4.59058 16.9183 4.65961 19.438V23.9451C4.65961 25.3078 3.88338 26.5422 2.69222 27.204C0.786957 28.0324 0.103547 30.3104 0 31.3459V56.3007V75.2498V87.6754C0 88.918 1.03547 89.5738 1.5532 89.7463C12.5637 92.4731 35.1438 98.0301 37.3805 98.4443C40.1762 98.962 41.5223 99.4798 42.5578 99.0656C43.3862 98.7342 43.5933 97.9611 43.5933 97.6159C43.5933 96.9893 44.1875 96.5325 44.7955 96.6841C47.8537 97.4469 53.0183 98.5478 56.1225 98.5478C59.6845 98.5478 66.6497 97.7885 69.6871 97.4088L107.378 92.335C113.177 91.4721 125.499 89.6428 128.398 89.2286C132.473 88.6465 136.473 87.2289 140.589 87.2091C148.489 87.171 160.108 85.6003 166.296 84.569C176.651 83.1193 198.727 80.0129 204.195 79.1846C209.662 78.3562 210.96 73.7311 210.925 71.5221V54.5404C210.925 49.1559 210.822 48.0169 209.89 46.2566C208.958 44.4963 206.887 43.0467 200.571 41.4935C190.616 39.3798 180.167 37.9845 173.482 37.2188C170.986 36.9329 169.331 32.9229 169.196 30.4139C169.334 25.3056 169.527 13.7015 169.196 8.15134C168.782 1.21369 159.669 0.695966 156.667 0.385325C154.264 0.136812 145.311 0.764997 141.135 1.11015C132.091 1.62789 112.038 2.78761 104.168 3.28464Z" style="fill: rgba(28, 45, 15, 0.7)"/>
+                </g>
+                </g>
+                <defs>
+                <pattern id="pattern057" patternContentUnits="objectBoundingBox" width="1" height="1" >
+                <use xlink:href="#image0_1_30097" transform="scale(0.000858369 0.00146413)"/>
+                </pattern>
+                  <image id="image0_1_30097" xlink:href="./images/shop-gallery/sofa3-background.png">
+                </defs>
+              </svg>
+              <div class="shop__sofa-description">
+                <p class="shop__sofa-description--block">3 Seater sofa</p>
+                <p class="shop__sofa-description--block"><span class="shop__sofa-price">Desde 2500€</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section--ticker ticker-section">
+        <div class="ticker-section__content">
+          <img src="./images/ticker-block-img.png" alt="Woman with dog" class="ticker-section__img">
+          <div class="ticker-section__ticker--wrap">
+            <h1 class="ticker-section__ticker--text">Modular. Dynamic. Comfy. Modular. Dynamic. Comfy.</h1>
+            <h1 class="ticker-section__ticker--text">&nbsp;Modular. Dynamic. Comfy. Modular. Dynamic. Comfy.</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section--partners partners" id="partners">
+        <div class="container">
+          <h3  class="partners__title">Hablan de nosotros</h3>
+          <div class="partners__img-container">
+            <img src="./images/partners/new-yourk-times.png" alt="The New York Times">
+            <img src="./images/partners/insider.png" alt="Insider">
+            <img src="./images/partners/travel.png" alt="Travel + Leisure">
+            <img src="./images/partners/vogue.png" alt="Vogue">
+            <img src="./images/partners/elle.png" alt="ELLE">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page__footer footer" id="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__mail-and-links-wrap">
+            <div class="footer__mail">
+              <h4 class="footer__mail-title">Join our mailing list</h4>
+              <form action="#" class="footer__mail-form" id="mail-form">
+                <input
+                  class="footer__mail-input"
+                  type="email"
+                  placeholder="Enter Your Email"
+                  required
+                >
+                <button class="button" type="submit">subscribe</button>
+              </form>
+              <p class="footer__mail-terms">By subscribing, i accept the terms & conditions.</p>
+            </div>
+            <div class="footer__links">
+              <h4 class="footer__links-title">Useful links</h4>
+              <div class="footer__links-wrap">
+                <a href="#benefits" class="footer__links-link">FAQs</a>
+                <a href="#partners" class="footer__links-link">Refer to a friend</a>
+                <a href="#footer" class="footer__links-link">Contact us</a>
+                <a href="#shop" class="footer__links-link">Work with us</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__media">
+            <a href="https://unsplash.com/s/photos/sofa" target="_blank">
+              <img
+              src="./images/footer/instagram.svg"
+              alt="instagram"
+              class="footer__media-img"
+            >
+            </a>
+            <a href="https://unsplash.com/s/photos/sofa" target="_blank">
+              <img
+              src="./images/footer/facebook.svg"
+              alt="facebook"
+              class="footer__media-img"
+            >
+            </a>
+            <a href="https://unsplash.com/s/photos/sofa" target="_blank">
+              <img
+              src="./images/footer/twitter.svg"
+              alt="twitter"
+              class="footer__media-img"
+            >
+            </a>
+          </div>
+        </div>
+        <div class="footer__logo">
+          <img src="./images/logo-footer.png" alt="Logo Pumm Pumm" class="footer__logo-img">
+        </div>
+        <div  class="footer__copyright">
+          <p>Copyright @Nubba 2022</p>
+          <div class="footer__copyright-links">
+            <a href="#" class="footer__copyright-link">Terms</a>
+            <a href="#" class="footer__copyright-link">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
