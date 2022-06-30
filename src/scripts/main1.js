@@ -1,13 +1,14 @@
 'use strict';
 
 const svg = document.querySelector(['.shop__good-svg--3']);
-const aelement = svg.getElementById('a');
+// const svg = document.querySelector(['.']);
+// const aelement = svg.getElementById('a');
 const tagname = svg.getElementsByTagName('mask');
 
-aelement.id = '777';
-tagname[0].id = '777';
+// aelement.id = '777';
+// tagname[0].id = '777';
 
-console.log(aelement);
+// console.log(aelement);
 console.log(tagname[0].id);
 
 const colorToggle = document.querySelectorAll(['.shop__colors']);
