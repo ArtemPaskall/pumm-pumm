@@ -30,6 +30,14 @@
 
     &--benefits {
       margin-top: 67px;
+
+      @include iPad {
+        margin-top: 37px;
+      }
+
+      @include mobile {
+        margin-top: 27px;
+      }
     }
 
     &--modulos {

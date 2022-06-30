@@ -16,6 +16,10 @@
   transition: all 0.3s;
   cursor: pointer;
 
+  @include mobile {
+    width: 250px;
+  }
+
   &:hover {
     background-color: #FFFFFF;
     color: #FF7144;
