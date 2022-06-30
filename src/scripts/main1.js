@@ -3,8 +3,7 @@
 const svg = document.querySelector(['.shop__good-svg--3']);
 
 console.log(svg);
-
-
+console.log(svg.mask);
 
 const colorToggle = document.querySelectorAll(['.shop__colors']);
 
