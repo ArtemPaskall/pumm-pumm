@@ -1,15 +1,8 @@
 'use strict';
 
-const sofasMask1 = document.querySelector(['.mask1']);
-// const sofasMask2 = document.querySelectorAll(['.mask2']);
-const a = document.getElementById('a');
-console.log(sofasMask1);
-console.log(sofasMask1.id);
-console.log(`a = ${a}`);
+const svg = document.querySelector(['.shop__good-svg--3']);
 
-// sofasMask1[0].id = '11111';
-// sofasMask2[0].id = '22222';
-console.log(a);
+console.log(svg.childNodes[1].id);
 
 const colorToggle = document.querySelectorAll(['.shop__colors']);
 
