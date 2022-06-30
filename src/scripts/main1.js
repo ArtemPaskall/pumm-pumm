@@ -2,9 +2,11 @@
 
 const svg = document.querySelector(['.shop__good-svg--3']);
 
+console.log(svg.childNodes);
 console.log(svg.childNodes[0].id);
 svg.childNodes[0].id = '999999';
 console.log(svg.childNodes[1].attributes[0].nodeValue);
+svg.childNodes[1].attributes[0].nodeValue = `url(#999999)`;
 
 const colorToggle = document.querySelectorAll(['.shop__colors']);
 
