@@ -1,8 +1,10 @@
 'use strict';
 
 const svg = document.querySelector(['.shop__good-svg--3']);
+const svg2 = document.querySelector(['.shop__good-svg--5']);
 
-console.log(svg.childNodes[1].id);
+console.log(svg);
+console.log(svg2);
 
 const colorToggle = document.querySelectorAll(['.shop__colors']);
 
