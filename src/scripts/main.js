@@ -1,5 +1,11 @@
 'use strict';
 
+const sofasMask1 = document.querySelectorAll(['.mask1']);
+const sofasMask2 = document.querySelectorAll(['.mask2']);
+console.dir(sofasMask[0].id);
+sofasMask1[0].id = 'image0_1_4000';
+sofasMask2[0].id = 'mask0_1_30097';
+
 const colorToggle = document.querySelectorAll(['.shop__colors']);
 
 colorToggle.forEach(toggle => toggle.addEventListener('click', () => {
