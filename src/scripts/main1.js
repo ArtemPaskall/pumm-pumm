@@ -3,8 +3,10 @@
 const svgSofa1 = document.querySelector(['.shop__good-svg--3']);
 const svgSofa2 = document.querySelector(['.shop__good-svg--5']);
 
-svgSofa1.childNodes[0].id = 'image0_1_4000';
-svgSofa1.childNodes[1].attributes[0].nodeValue = 'url(#image0_1_4000)';
+// svgSofa1.childNodes[0].id = 'image0_1_4000';
+// svgSofa1.childNodes[1].attributes[0].nodeValue = 'url(#image0_1_4000)';
+svgSofa1.childNodes[0].id = 'mask0_1_3009';
+svgSofa1.childNodes[1].attributes[0].nodeValue = 'url(#mask0_1_3009)';
 
 svgSofa2.childNodes[0].id = 'mask0_1_30097';
 svgSofa2.childNodes[1].attributes[0].nodeValue = 'url(#mask0_1_30097)';
