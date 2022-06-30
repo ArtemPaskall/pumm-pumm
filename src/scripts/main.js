@@ -3,6 +3,7 @@
 const sofasMask1 = document.querySelectorAll(['.mask1']);
 // const sofasMask2 = document.querySelectorAll(['.mask2']);
 const a = document.getElementById('a');
+console.log(sofasMask1);
 
 sofasMask1[0].id = '11111';
 // sofasMask2[0].id = '22222';
