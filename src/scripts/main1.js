@@ -2,8 +2,7 @@
 
 const svg = document.querySelector(['.shop__good-svg--3']);
 
-console.log(svg);
-console.log(svg.mask);
+console.log(svg.childNodes[1].id);
 
 const colorToggle = document.querySelectorAll(['.shop__colors']);
 
