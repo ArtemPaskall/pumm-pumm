@@ -1,7 +1,6 @@
 'use strict';
 
 const svg = document.querySelector(['.shop__good-svg--3']);
-const svg2 = document.querySelector(['.shop__good-svg--5']);
 const aelement = svg.getElementById('a');
 aelement.id = '777';
 
