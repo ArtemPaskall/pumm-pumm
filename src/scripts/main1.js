@@ -4,7 +4,7 @@ const svg = document.querySelector(['.shop__good-svg--3']);
 
 console.log(svg.childNodes[0].id);
 svg.childNodes[0].id = '999999';
-console.log(svg.childNodes[0].id);
+console.log(svg.childNodes);
 
 const colorToggle = document.querySelectorAll(['.shop__colors']);
 
