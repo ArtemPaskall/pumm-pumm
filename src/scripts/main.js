@@ -2,9 +2,12 @@
 
 const sofasMask1 = document.querySelectorAll(['.mask1']);
 const sofasMask2 = document.querySelectorAll(['.mask2']);
-console.dir(sofasMask[0].id);
-sofasMask1[0].id = 'image0_1_4000';
-sofasMask2[0].id = 'mask0_1_30097';
+
+sofasMask1[0].id = 88888;
+sofasMask2[0].id = 9999;
+
+console.dir(sofasMask1[0].id);
+console.dir(sofasMask2[0].id);
 
 const colorToggle = document.querySelectorAll(['.shop__colors']);
 
