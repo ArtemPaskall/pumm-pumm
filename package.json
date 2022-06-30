@@ -42,5 +42,9 @@
   "mateAcademy": {
     "projectType": "layout"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "plugins": [
+    {"convertPathData": false},
+    {"prefixIds": {"prefix": false}}
+  ]
 }
