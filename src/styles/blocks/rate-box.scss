@@ -12,6 +12,10 @@
   font-size: 12px;
   line-height: 185%;
 
+  @include mobile {
+    display: none;
+  }
+
   &__rate-value {
     display: flex;
     justify-content: center;

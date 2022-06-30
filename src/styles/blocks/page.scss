@@ -42,6 +42,14 @@
 
     &--modulos {
       margin-top: 79px;
+
+      @include iPad {
+        margin-top: 39px;
+      }
+
+      @include mobile {
+        margin-top: 30px;
+      }
     }
 
     &--ticker  {
