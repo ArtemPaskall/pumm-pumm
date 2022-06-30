@@ -1,17 +1,13 @@
 'use strict';
 
-const svg = document.querySelector(['.shop__good-svg--3']);
-const svg1 = document.querySelector(['.shop__good-svg--5']);
+const svgSofa1 = document.querySelector(['.shop__good-svg--3']);
+const svgSofa2 = document.querySelector(['.shop__good-svg--5']);
 
-console.log(svg.childNodes);
-console.log(svg.childNodes[0].id);
-svg.childNodes[0].id = '999999';
-console.log(svg.childNodes[1].attributes[0].nodeValue);
-svg.childNodes[1].attributes[0].nodeValue = `url(#999999)`;
-console.log(svg.childNodes[1].attributes[0].nodeValue);
+svgSofa1.childNodes[0].id = 'image0_1_4000';
+svgSofa1.childNodes[1].attributes[0].nodeValue = 'url(#image0_1_4000)';
 
-svg1.childNodes[0].id = '777';
-svg1.childNodes[1].attributes[0].nodeValue = `url(#777)`;
+svgSofa2.childNodes[0].id = 'mask0_1_30097';
+svgSofa2.childNodes[1].attributes[0].nodeValue = 'url(#mask0_1_30097)';
 
 const colorToggle = document.querySelectorAll(['.shop__colors']);
 
