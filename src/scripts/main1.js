@@ -2,9 +2,10 @@
 
 const svg = document.querySelector(['.shop__good-svg--3']);
 const svg2 = document.querySelector(['.shop__good-svg--5']);
+const aelement = svg.getElementById('a');
 
 console.log(svg);
-console.log(svg2);
+console.log(aelement);
 
 const colorToggle = document.querySelectorAll(['.shop__colors']);
 
