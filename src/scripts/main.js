@@ -3,10 +3,10 @@
 const sofasMask1 = document.querySelectorAll(['.mask1']);
 const sofasMask2 = document.querySelectorAll(['.mask2']);
 
-sofasMask1[0].id = 88888;
-sofasMask2[0].id = 9999;
+sofasMask1[0].id = '1';
+sofasMask2[0].id = '2';
 
-console.dir(sofasMask1[0].id);
+console.dir(sofasMask1[0]);
 console.dir(sofasMask2[0].id);
 
 const colorToggle = document.querySelectorAll(['.shop__colors']);
