@@ -52,35 +52,13 @@ window.addEventListener('hashchange', () => {
   }
 });
 
-// let offset = 0;
-// const sliderLine = document.querySelector('.shop__gallery');
-
-// document.querySelector(['.shop-slider__prev-button'])
-//   .addEventListener('click', function() {
-//     offset -= 450;
-
-//     if (offset < -900) {
-//       offset = 900;
-//     }
-//     sliderLine.style.left = -offset + 'px';
-//   });
-
-// document.querySelector(['.shop-slider__next-button'])
-//   .addEventListener('click', function() {
-//     offset += 450;
-
-//     if (offset > 900) {
-//       offset = -900;
-//     }
-//     sliderLine.style.left = -offset + 'px';
-//   });
-
-const widthItem = document.querySelector('.shop__good-item')
+const widthItemCount = () => document.querySelector('.shop__good-item')
   .getBoundingClientRect().width;
 
 let offset = 0;
-const step = widthItem;
+const step = widthItemCount();
 const sliderLine = document.querySelector('.shop__gallery');
+console.log(sliderLine.style);
 
 document.querySelector(['.shop-slider__prev-button'])
   .addEventListener('click', function() {
@@ -101,3 +79,11 @@ document.querySelector(['.shop-slider__next-button'])
     }
     sliderLine.style.left = -offset + 'px';
   });
+
+window.addEventListener('resize', function() {
+  const screenWidth = document.body.clientWidth;
+
+  if (screenWidth > 768) {
+    sliderLine.style.left = 0 + 'px';
+  }
+});
