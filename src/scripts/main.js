@@ -52,25 +52,52 @@ window.addEventListener('hashchange', () => {
   }
 });
 
+// let offset = 0;
+// const sliderLine = document.querySelector('.shop__gallery');
+
+// document.querySelector(['.shop-slider__prev-button'])
+//   .addEventListener('click', function() {
+//     offset -= 450;
+
+//     if (offset < -900) {
+//       offset = 900;
+//     }
+//     sliderLine.style.left = -offset + 'px';
+//   });
+
+// document.querySelector(['.shop-slider__next-button'])
+//   .addEventListener('click', function() {
+//     offset += 450;
+
+//     if (offset > 900) {
+//       offset = -900;
+//     }
+//     sliderLine.style.left = -offset + 'px';
+//   });
+
+const widthItem = document.querySelector('.shop__good-item')
+  .getBoundingClientRect().width;
+
 let offset = 0;
+const step = widthItem;
 const sliderLine = document.querySelector('.shop__gallery');
 
 document.querySelector(['.shop-slider__prev-button'])
   .addEventListener('click', function() {
-    offset += 450;
+    offset -= step;
 
-    if (offset > 900) {
-      offset = -900;
+    if (offset < -(2 * step)) {
+      offset = (2 * step);
     }
     sliderLine.style.left = -offset + 'px';
   });
 
 document.querySelector(['.shop-slider__next-button'])
   .addEventListener('click', function() {
-    offset -= 450;
+    offset += step;
 
-    // if (offset < 900) {
-    //   offset = 900;
-    // }
+    if (offset > (2 * step)) {
+      offset = -(2 * step);
+    }
     sliderLine.style.left = -offset + 'px';
   });
