@@ -3,8 +3,6 @@
 const svgSofa1 = document.querySelector(['.shop__good-svg--3']);
 const svgSofa2 = document.querySelector(['.shop__good-svg--5']);
 
-// svgSofa1.childNodes[0].id = 'image0_1_4000';
-// svgSofa1.childNodes[1].attributes[0].nodeValue = 'url(#image0_1_4000)';
 svgSofa1.childNodes[0].id = 'mask0_1_3009';
 svgSofa1.childNodes[1].attributes[0].nodeValue = 'url(#mask0_1_3009)';
 
@@ -53,3 +51,26 @@ window.addEventListener('hashchange', () => {
     document.body.classList.remove('page__body--with-menu');
   }
 });
+
+let offset = 0;
+const sliderLine = document.querySelector('.shop__gallery');
+
+document.querySelector(['.shop-slider__prev-button'])
+  .addEventListener('click', function() {
+    offset += 450;
+
+    if (offset > 900) {
+      offset = -900;
+    }
+    sliderLine.style.left = -offset + 'px';
+  });
+
+document.querySelector(['.shop-slider__next-button'])
+  .addEventListener('click', function() {
+    offset -= 450;
+
+    // if (offset < 900) {
+    //   offset = 900;
+    // }
+    sliderLine.style.left = -offset + 'px';
+  });
