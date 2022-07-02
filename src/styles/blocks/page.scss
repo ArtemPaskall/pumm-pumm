@@ -68,10 +68,26 @@
       margin: 0 auto;
       margin-top: 71px;
       max-width: 1440px;
+
+      @include iPad {
+        margin-top: 41px;
+      }
+
+      @include mobile {
+        margin-top: 31px;
+      }
     }
 
     &--partners {
       margin-top: 76px;
+
+      @include iPad {
+        margin-top: 41px;
+      }
+
+      @include mobile {
+        margin-top: 31px;
+      }
     }
   }
 

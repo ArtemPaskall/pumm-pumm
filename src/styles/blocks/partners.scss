@@ -6,7 +6,6 @@
     font-weight: normal;
     line-height: 120%;
     letter-spacing: -0.01em;
-
   }
 
   &__img-container {
@@ -17,9 +16,14 @@
     margin-top: 42px;
 
     @include iPad {
+      margin-top: 22px;
       padding: 0 20px;
       flex-wrap: wrap;
       row-gap: 20px;
+    }
+
+    @media (max-width: 520px) {
+      flex-direction: column;
     }
 
     & img {

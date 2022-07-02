@@ -1,14 +1,22 @@
 .footer {
   &__content {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__mail-and-links-wrap {
     display: flex;
     justify-content: space-between;
-  }
 
+    @include mobile {
+      flex-direction: column;
+    }
+  }
 
   &__mail {
     margin-right: 120px;
@@ -107,6 +115,9 @@
       gap: 20px;
     }
 
+    @include mobile {
+      flex-direction: row;
+    }
 
 
     &-img {
