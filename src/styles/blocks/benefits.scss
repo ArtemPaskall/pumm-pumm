@@ -33,11 +33,11 @@
 
     @include iPad {
       padding-top: 0;
-      font-size: 25px;
+      font-size: 26px;
     }
 
     @include mobile {
-      font-size: 18px;
+      font-size: 20px;
       text-align: center;
     }
 
@@ -80,11 +80,11 @@
     @include iPad {
       justify-content: center;
       justify-content: space-around;
-      margin: 30px 50px 0;
+      margin: 30px 0 0;
       gap: 10px;
     }
 
-    @include mobile {
+    @media (max-width: 860px) {
       flex-direction: column;
       justify-content: center;
       gap: 10px;

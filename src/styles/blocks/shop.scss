@@ -12,7 +12,7 @@
     }
 
     @include mobile {
-      font-size: 30px;
+      font-size: 20px;
     }
   }
 
@@ -24,7 +24,6 @@
     margin-top: 71px;
 
     @include mobile {
-      // justify-content: center;
       margin-top: 25px;
     }
   }
@@ -42,6 +41,10 @@
     letter-spacing: -0.01em;
 
     color: #8F8F8F;
+
+    @media (max-width: 400px) {
+      margin-right: 14px;
+    }
   }
 
   &__colors-wraper {
@@ -51,6 +54,12 @@
     margin-right: 21px;
 
     cursor: pointer;
+
+    @media (max-width: 400px) {
+      margin-right: 16px;
+      width: 30px;
+      height: 30px;
+    }
 
     &:hover {
       border: 3px solid rgba(41, 44, 53, 0.3);
@@ -72,6 +81,11 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
+
+    @media (max-width: 400px) {
+      width: 20px;
+      height: 20px;
+    }
 
     &--1 {
       background-color: #1C2D0F;

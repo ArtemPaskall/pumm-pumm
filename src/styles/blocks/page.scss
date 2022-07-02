@@ -4,6 +4,7 @@
   &__body {
     font-family: "Radion";
     color: $text-color;
+    min-width: 320px;
   }
 
   .page__body--with-menu {
