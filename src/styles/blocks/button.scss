@@ -18,6 +18,11 @@
 
   @include mobile {
     width: 250px;
+
+    &--mail {
+      width: 228px;
+    }
+
   }
 
   &:hover {

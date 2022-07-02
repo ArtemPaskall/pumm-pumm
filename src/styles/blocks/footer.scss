@@ -4,8 +4,12 @@
     flex-direction: row;
     justify-content: space-between;
 
-    @include mobile {
+    @media (max-width: 650px) {
       flex-direction: column;
+    }
+
+    @media (max-width: 560px) {
+      align-items: center;
     }
   }
 
@@ -13,13 +17,17 @@
     display: flex;
     justify-content: space-between;
 
-    @include mobile {
+    @media (max-width: 560px) {
       flex-direction: column;
     }
   }
 
   &__mail {
     margin-right: 120px;
+
+    @media (max-width: 650px){
+      margin-right: 0;
+    }
 
     &-title {
       font-size: 16px;
@@ -60,6 +68,15 @@
 
     &-form {
       margin-top: 18px;
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &-button {
+      margin-top: 10px;
     }
 
     &-terms {
@@ -75,10 +92,22 @@
 
   &__links {
 
+    @media (max-width: 650px) {
+      margin-right: 35px;
+    }
+
+    @media (max-width: 560px) {
+      margin-top: 40px;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+    }
+
     &-title {
       font-size: 16px;
       line-height: 140%;
       letter-spacing: -0.01em;
+      text-align: center;
     }
 
     &-wrap {
@@ -87,6 +116,10 @@
 
       margin-top: 25px;
       gap: 5px;
+
+      @media (max-width: 560px) {
+        // align-items: flex-end;
+      }
     }
 
     &-link {
@@ -115,10 +148,13 @@
       gap: 20px;
     }
 
-    @include mobile {
+    @media (max-width: 650px) {
       flex-direction: row;
     }
 
+    @media (max-width: 560px) {
+      margin-top: 30px;
+    }
 
     &-img {
       width: 19px;

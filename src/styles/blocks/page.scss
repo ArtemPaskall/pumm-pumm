@@ -94,5 +94,13 @@
   &__footer {
     margin-top: 145px;
     margin-bottom: 40px;
+
+    @include iPad {
+      margin-top: 75px;
+    }
+
+    @include mobile {
+      margin-top: 50px;
+    }
   }
 }
