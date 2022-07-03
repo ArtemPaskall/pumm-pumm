@@ -40,7 +40,7 @@
     line-height: 140%;
     letter-spacing: -0.01em;
 
-    color: #8F8F8F;
+    color: #8f8f8f;
 
     @media (max-width: 400px) {
       margin-right: 14px;
@@ -88,31 +88,27 @@
     }
 
     &--1 {
-      background-color: #1C2D0F;
+      background-color: #1c2d0f;
       opacity: 0.7;
     }
     &--2 {
-      background-color: #0B1B46;
+      background-color: #0b1b46;
       opacity: 0.8;
     }
     &--3 {
-      background-color: #BBC8D9;
+      background-color: #bbc8d9;
       opacity: 0.7;
     }
     &--4 {
-      background-color: #BEBAB8;
+      background-color: #bebab8;
       opacity: 0.5;
     }
   }
-
-
-
 
   &__gallery-wrap {
     @include mobile {
       position: relative;
       width: 550px;
-      // border: 1px solid black;
       margin: 0 auto;
       overflow: hidden;
       margin-top: 26px;
@@ -121,14 +117,43 @@
   }
 
   &-slider {
-    &__prev-button {
-      // position: absolute;
-    }
+    &__button {
+      display: none;
 
-    &__next-button {
-      // position: absolute;
+      @include mobile {
+        display: block;
+      }
+
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+      width: 45px;
+      height: 45px;
+
+      @media (max-width: 600px) {
+        width: 35px;
+        height: 35px;
+      }
+
+      &--prev {
+        left: 0;
+        transform: translate(50%, -50%) rotate(180deg);
+
+        @media (max-width: 450px) {
+          transform: translate(10%, -50%) rotate(180deg);
+        }
+      }
+
+      &--next {
+        right: 0;
+        transform: translate(-50%, -50%);
+
+        @media (max-width: 450px) {
+          transform: translate(-10%, -50%);
+        }
+      }
     }
-   }
+  }
 
   &__gallery {
     position: relative;
@@ -138,7 +163,6 @@
     gap: 3px;
 
     margin-top: 26px;
-    justify-content: center;
     left: 0;
     transition: all ease 1s;
 
@@ -154,15 +178,13 @@
       grid-template-rows: none;
       gap: 0;
       margin-top: 0;
-      left: 0;
     }
   }
 
   &__good-item {
     position: relative;
     padding-bottom: 100%;
-    background-color: #F3F3F3;
-
+    background-color: #f3f3f3;
     border-radius: 30px;
 
     @include mobile {
@@ -213,7 +235,6 @@
       }
     }
 
-
     @include mobile {
       padding-bottom: 65%;
 
@@ -255,7 +276,7 @@
         width: 50%;
       }
       &--3 {
-       height: 30%;
+        height: 30%;
       }
       &--4 {
         width: 150%;
@@ -263,6 +284,24 @@
       }
       &--5 {
         width: 70%;
+      }
+    }
+
+    @include mobile {
+      &--1 {
+        height: 40%;
+      }
+      &--2 {
+        height: 40%;
+      }
+      &--3 {
+        height: 40%;
+      }
+      &--4 {
+        height: 40%;
+      }
+      &--5 {
+        height: 40%;
       }
     }
   }
@@ -309,18 +348,18 @@
     opacity: 0.5;
   }
 
- &__button {
-  @include mobile {
-    display: none;
-  }
-
-  &--mobile {
-    display: none;
-
+  &__button {
     @include mobile {
-      display: block;
-      margin: 20px auto 0;
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include mobile {
+        display: block;
+        margin: 20px auto 0;
+      }
     }
   }
- }
 }

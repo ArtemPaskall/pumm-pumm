@@ -1,14 +1,6 @@
 'use strict';
 
-const svgSofa1 = document.querySelector(['.shop__good-svg--3']);
-const svgSofa2 = document.querySelector(['.shop__good-svg--5']);
-
-svgSofa1.childNodes[0].id = 'mask0_1_3009';
-svgSofa1.childNodes[1].attributes[0].nodeValue = 'url(#mask0_1_3009)';
-
-svgSofa2.childNodes[0].id = 'mask0_1_30097';
-svgSofa2.childNodes[1].attributes[0].nodeValue = 'url(#mask0_1_30097)';
-
+// #  -- Change sofa color
 const colorToggle = document.querySelectorAll(['.shop__colors']);
 
 colorToggle.forEach(toggle => toggle.addEventListener('click', () => {
@@ -25,6 +17,16 @@ colorToggle.forEach(toggle => toggle.addEventListener('click', () => {
   });
 }));
 
+const svgSofa1 = document.querySelector(['.shop__good-svg--3']);
+const svgSofa2 = document.querySelector(['.shop__good-svg--5']);
+
+svgSofa1.childNodes[0].id = 'mask0_1_3009';
+svgSofa1.childNodes[1].attributes[0].nodeValue = 'url(#mask0_1_3009)';
+
+svgSofa2.childNodes[0].id = 'mask0_1_30097';
+svgSofa2.childNodes[1].attributes[0].nodeValue = 'url(#mask0_1_30097)';
+
+// #  -- Active color style
 const colorSelectors = document.querySelectorAll(['.shop__colors-wraper']);
 
 colorSelectors.forEach(selector =>
@@ -37,6 +39,7 @@ colorSelectors.forEach(selector =>
     this.className += ' shop__colors-wraper--is-active';
   }));
 
+// #  -- Reload page prevent
 const form = document.getElementById('mail-form');
 
 form.addEventListener(
@@ -44,6 +47,7 @@ form.addEventListener(
     event.preventDefault();
   });
 
+// #  -- Scroll disable on menu
 window.addEventListener('hashchange', () => {
   if (window.location.hash === '#menu') {
     document.body.classList.add('page__body--with-menu');
@@ -54,59 +58,50 @@ window.addEventListener('hashchange', () => {
 
 // #  -- Slider for shop gallery
 
-const widthItemCount = () => document.querySelector('.shop__good-item')
-  .getBoundingClientRect().width;
-
-let offset = 0;
-const step = widthItemCount();
-const sliderLine = document.querySelector('.shop__gallery');
+let count = 0;
+const galleryWrap = document.querySelector('.shop__gallery-wrap');
+const gallery = document.querySelector('.shop__gallery');
+const galleryItem = document.querySelector('.shop__good-item');
+const galleryItems = document.querySelectorAll('.shop__good-item');
+let imageWidth;
 
 window.addEventListener('resize', function() {
   const screenWidth = document.body.clientWidth;
-  const sliderWidth = document.querySelector('.shop__gallery-wrap');
 
-  sliderWidth.style.width = `${screenWidth - 100}px`;
-  console.log(getComputedStyle(sliderWidth).width);
+  galleryWrap.style.width = `${screenWidth - 50}px`;
 
-  if (screenWidth > 768) {
-    sliderWidth.style.width = 'auto';
-    sliderLine.style.left = 0 + 'px';
-    sliderLine.style.gridTemplateColumns = `repeat(6, minmax(100px, 1fr))`;
+  if (screenWidth <= 768) {
+    gallery.style.gridTemplateColumns = `repeat(5, ${screenWidth - 50}px)`;
+    rollSlider();
+  } else {
+    gallery.style.gridTemplateColumns = '';
+    gallery.style.left = 0;
+    rollSlider();
+    gallery.style.transform = `translate(0px)`;
   }
-
-  if (screenWidth > 1280) {
-    sliderWidth.style.width = 'auto';
-    sliderLine.style.gridTemplateColumns = `repeat(4, minmax(200px, 1fr))`;
-  }
-
-  if (screenWidth < 768) {
-    sliderLine.style.gridTemplateColumns = `repeat(5, ${screenWidth - 100}px)`;
-  }
-
-  console.log(getComputedStyle(sliderLine).gridTemplateColumns);
 });
 
-// console.log(sliderLine.style);
-// console.log(getComputedStyle(sliderLine).gridTemplateColumns);
-
-document.querySelector(['.shop-slider__prev-button'])
+document.querySelector(['.shop-slider__button--next'])
   .addEventListener('click', function() {
-    offset -= step;
+    count++;
 
-    if (offset < -(2 * step)) {
-      offset = (2 * step);
+    if (count >= galleryItems.length) {
+      count = 0;
     }
-    sliderLine.style.left = -offset + 'px';
+    rollSlider();
   });
 
-document.querySelector(['.shop-slider__next-button'])
+document.querySelector(['.shop-slider__button--prev'])
   .addEventListener('click', function() {
-    offset += step;
+    count--;
 
-    if (offset > (2 * step)) {
-      offset = -(2 * step);
+    if (count < 0) {
+      count = galleryItems.length - 1;
     }
-    sliderLine.style.left = -offset + 'px';
+    rollSlider();
   });
 
-
+function rollSlider() {
+  imageWidth = (window.getComputedStyle(galleryItem).width).slice(0, -2);
+  gallery.style.transform = `translate(-${count * imageWidth}px)`;
+}
