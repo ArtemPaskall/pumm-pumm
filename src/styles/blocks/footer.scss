@@ -25,7 +25,7 @@
   &__mail {
     margin-right: 120px;
 
-    @media (max-width: 650px){
+    @media (max-width: 650px) {
       margin-right: 0;
     }
 
@@ -42,7 +42,7 @@
       border-radius: 40px;
       margin-right: 5px;
 
-      font-family: "Roboto";
+      font-family: "Roboto", sans-serif;
       font-size: 16px;
       line-height: 140%;
       letter-spacing: -0.01em;
@@ -127,7 +127,6 @@
         opacity: 1;
       }
     }
-
   }
 
   &__media {
@@ -165,7 +164,7 @@
     margin-top: 73px;
     position: relative;
     overflow: hidden;
-    padding: 0 0 15% 0;
+    padding: 0 0 15%;
 
     @include iPad {
       margin-top: 43px;
@@ -235,4 +234,3 @@
     }
   }
 }
-

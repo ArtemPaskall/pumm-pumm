@@ -6,7 +6,7 @@
   color: #FFFFFF;
 
   font-size: 15px;
-  font-family: "Radion";
+  font-family: "Radion", sans-serif;
   font-weight: normal;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -22,7 +22,6 @@
     &--mail {
       width: 228px;
     }
-
   }
 
   &:hover {

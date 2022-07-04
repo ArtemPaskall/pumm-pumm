@@ -1,6 +1,7 @@
 'use strict';
 
 // #  -- Change sofa color
+
 const colorToggle = document.querySelectorAll(['.shop__colors']);
 
 colorToggle.forEach(toggle => toggle.addEventListener('click', () => {
@@ -27,6 +28,7 @@ svgSofa2.childNodes[0].id = 'mask0_1_30097';
 svgSofa2.childNodes[1].attributes[0].nodeValue = 'url(#mask0_1_30097)';
 
 // #  -- Active color style
+
 const colorSelectors = document.querySelectorAll(['.shop__colors-wraper']);
 
 colorSelectors.forEach(selector =>
@@ -40,6 +42,7 @@ colorSelectors.forEach(selector =>
   }));
 
 // #  -- Reload page prevent
+
 const form = document.getElementById('mail-form');
 
 form.addEventListener(
@@ -48,6 +51,7 @@ form.addEventListener(
   });
 
 // #  -- Scroll disable on menu
+
 window.addEventListener('hashchange', () => {
   if (window.location.hash === '#menu') {
     document.body.classList.add('page__body--with-menu');
@@ -65,7 +69,7 @@ const galleryItem = document.querySelector('.shop__good-item');
 const galleryItems = document.querySelectorAll('.shop__good-item');
 let imageWidth;
 
-window.addEventListener('resize', function() {
+function init() {
   const screenWidth = document.body.clientWidth;
 
   galleryWrap.style.width = `${screenWidth - 50}px`;
@@ -79,7 +83,11 @@ window.addEventListener('resize', function() {
     rollSlider();
     gallery.style.transform = `translate(0px)`;
   }
-});
+}
+
+init();
+
+window.addEventListener('resize', init);
 
 document.querySelector(['.shop-slider__button--next'])
   .addEventListener('click', function() {
